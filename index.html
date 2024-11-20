@@ -5,12 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina di Davide</title>
   </head>
-  <body>
-    <!--Titoli -->
-    <h1>Mario il Robot Galattico!</h1>
+  <head>
+    <style>
+      /* CSS Interno */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: column; /* Mantieni gli elementi uno sotto l'altro */
+        justify-content: center; /* Centra verticalmente */
+        align-items: center;    /* Centra orizzontalmente */
+        min-height: 50vh;      /* Altezza minima: schermo intero */
+        margin: 0;              /* Elimina i margini */
+      }
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+      p {
+        font-size: 18px;
+        color: rgb(17, 199, 245);
+      }
+      img {
+        border: 2px solid black;
+        margin: 10px 0; /* Spaziatura sopra e sotto l'immagine */
+      }
+      ul, ol {
+        text-align: left; /* Allinea le liste a sinistra */
+        margin: 10px 0;
+      }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        font-size: 16px;
+        color: #007BFF;
+        text-decoration: none;
+        border: 1px solid #007BFF;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      a:hover {
+        background-color: #007BFF;
+        color: white;
+      }
+    </style>
+ </head>
+    <body>
+    <!--Titoli --> <!--CSS IN LINEA-->  
+    <h1 style="color:blue; text-align: center;">Mario il Robot Galattico!</h1>
     <!-- Paragrafo -->
-    <p>In un mondo governato dalle incertezze c'è Mario il robot Galattico</p>
-    <p>Adatto a Tutte le età</p>
+    <p style="font-size: 18px; color: rgb(17, 199, 245);">In un mondo governato dalle incertezze c'è Mario il robot Galattico</p>
+    <p style="font-size: 18px; color: rgb(17, 199, 245);">Adatto a Tutte le età</p>
 
     <!-- Lista -->
     <h2>Cosa fa il Robot</h2>
