@@ -1,0 +1,12 @@
+<div>
+<h2>Selezione Paese</h2>
+<!-- Menu a tendina (select) popolato dinamicamente -->
+ <select [(ngModel)]="selezionePaese">
+    <option *ngFor="let paese of paesi" [value]="paesi">
+        {{ paesi }}
+      </option>
+ </select>
+ <div *ngIf="selezionePaese">
+    <p>Hai selezionato: <strong>{{ selezionePaese }}</strong></p>
+  </div>
+</div>
