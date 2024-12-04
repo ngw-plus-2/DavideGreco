@@ -1,0 +1,25 @@
+<!--<div>
+     Pulsante per alternare la visibilità -->
+   <!-- <button (click)="toogleVisibility()">Mostra/Nascondi Paragrafo</button>
+
+     Paragrafo visibile/nascosto in base alla variabile -->
+    <!-- <p *ngIf="isVisible; else elseBlock">  Questo è il paragrafo visibile.</p>
+      Blocco alternativo (else) -->
+  <!--<ng-template #elseBlock>
+    <p>Il paragrafo è nascosto. Fai clic per mostrarlo.</p>
+  </ng-template>
+</div> -->
+
+<div>
+    <button (click)="toggleVisibility()">Mostra/Nascondi Paragrafo</button>
+    <p *ngIf="isVisible; else elseBlock">
+      Questo è il paragrafo visibile.
+    </p>
+    <ng-template #elseBlock>
+      <p *ngIf="!isVisible; else loading">Il paragrafo è nascosto. Fai clic per mostrarlo.</p>
+      <ng-template #loading>
+        <p>Caricamento...</p>
+      </ng-template>
+    </ng-template>
+  </div>
+  

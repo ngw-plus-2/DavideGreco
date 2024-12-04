@@ -1,0 +1,35 @@
+<div>
+    <label for="role">Seleziona il ruolo dell'utente:</label>
+    <select id="role" [(ngModel)]="UserStato">
+      <option value="admin">Admin</option>
+      <option value="utente">Utente</option>
+      <option value="ospite">Ospite</option>
+    </select>
+  </div>
+  
+  <div [ngSwitch]="UserStato">
+    <!-- Visualizzazione per Admin -->
+    <div *ngSwitchCase="'admin'">
+      <h2>Benvenuto Admin!</h2>
+      <p>Puoi vedere i dati personali, modificare impostazioni e gestire utenti.</p>
+    </div>
+  
+    <!-- Visualizzazione per Utente -->
+    <div *ngSwitchCase="'utente'">
+      <h2>Benvenuto Utente!</h2>
+      <p>Puoi vedere i dati personali e modificare alcune impostazioni.</p>
+    </div>
+  
+    <!-- Visualizzazione per Ospite -->
+    <div *ngSwitchCase="'ospite'">
+      <h2>Benvenuto Ospite!</h2>
+      <p>Puoi vedere solo le informazioni di base e non puoi modificare nulla.</p>
+    </div>
+  
+    <!-- Caso di default -->
+    <div *ngSwitchDefault>
+      <h2>Ruolo non riconosciuto</h2>
+      <p>Seleziona un ruolo valido.</p>
+    </div>
+  </div>
+

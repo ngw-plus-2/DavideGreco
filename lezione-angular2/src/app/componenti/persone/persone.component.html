@@ -1,0 +1,10 @@
+<div>
+    <h2>Lista di persone</h2>
+    <ul>
+      <!-- Iterazione sull'array con ngFor -->
+      <li *ngFor="let person of persone; let i = index">
+        {{ i + 1 }}. Nome: {{ person.nome }}, Età: {{ person.eta }}
+      </li>
+    </ul>
+  </div>
+  
