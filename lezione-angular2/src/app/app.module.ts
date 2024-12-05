@@ -12,13 +12,36 @@ import { ComponentiComponent } from './child-component/componenti/componenti.com
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ButtonComponent } from './button/button.component';
+import { EsercizioNgSwitchComponent } from './esercizio-ng-switch/esercizio-ng-switch.component';
+import { EsercizioNgIfComponent } from './esercizio-ng-if/esercizio-ng-if.component';
+import { EsercizioNgforComponent } from './esercizio-ngfor/esercizio-ngfor.component';
+import { ProductApiComponent } from './product-api/product-api.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 @NgModule({
   declarations: [
       // Componenti normali
-      
+      TendinaComponent, // Standalone
+      ProductDetailComponent, // Standalone
+       // Standalone
+      ChildComponent,
+      ProductListComponent,
+      ChildComponent,
+      ComponentiComponent,
+      AppComponent,
+      ToggleParagraphComponent,
+      PersoneComponent,
       ParentComponent,
+      ButtonComponent,
+      ButtonComponent,
+      EsercizioNgSwitchComponent,
+      EsercizioNgIfComponent,
+      EsercizioNgforComponent,
+      ProductApiComponent,
+      UserListComponent, 
+      
       
    
   ],
@@ -28,16 +51,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
     // Componenti standalone, devono essere importati e non dichiarati
-    TendinaComponent, // Standalone
-    ProductDetailComponent, // Standalone
-     // Standalone
-    ChildComponent,
-    ProductListComponent,
-    ChildComponent,
-    ComponentiComponent,
-    AppComponent,
-    ToggleParagraphComponent,
-    PersoneComponent,   // Se ChildComponent è standalone, lo aggiungi a imports
+     // Se ChildComponent è standalone, lo aggiungi a imports
 ],
   providers: [],
   bootstrap: []

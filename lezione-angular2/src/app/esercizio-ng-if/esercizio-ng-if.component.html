@@ -1,0 +1,14 @@
+<div>
+    <p>Prova</p>
+    <div *ngIf="isClicked; else falseCond">
+        <p>Condizione vera</p>
+    </div>
+    <ng-template #falseCond>
+        <p *ngIf="isLoading">Caricamento in corso...</p>
+        <p *ngIf="isLoading">Caricamento completato, la condizione è falsa</p>
+    </ng-template>
+    <div>
+        <app-button [textButton]="Testo" (click)="checkTasto()">Ciao</app-button>
+    </div>
+
+</div>

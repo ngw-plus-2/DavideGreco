@@ -1,0 +1,27 @@
+<p>esercizio-ngfor works!</p>
+<p>esercizio-ngfor works!</p>
+
+<div class="container">
+
+    <div *ngFor="let item of persone; let i = index" class="row">
+        <div class="column">
+            <div class="card">
+                <p>Indice: {{i}}</p>
+                <p>Nome: {{item.nome}}</p>
+                <p>Anni: {{item.eta}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    
+</div>
+<div>
+    <label for="paesi">Scegli un paese: </label>
+    <select name="paesi" [(ngModel)]="selectedValue">
+        <option *ngFor="let item of paesi" [value]="item">{{item}}</option>
+    </select>
+    <div>
+        {{selectedValue}}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<p>esercizio-ng-switch works!</p>
+
+<div>
+    
+</div>
+<div [ngSwitch]="utente">
+    <input type="text">
+    <button type="submit">
+        Save
+    </button>
+    <div *ngSwitchCase="'ADMIN'" form>
+        <p>Cosa puoi fare?</p>
+        <ul>
+            <li>
+                
+            </li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'USER'" [formControlName = "USER"]>
+        <p>Cosa puoi fare?1</p>
+    </div>
+    <div *ngSwitchCase="'GUEST'" [formControlName="GUEST"]>
+        <p>Cosa puoi fare?2</p>
+    </div>
+</div>
