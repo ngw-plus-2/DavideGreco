@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-toggle-paragraph',
   templateUrl: './toggle-paragraph.component.html',
   styleUrls: ['./toggle-paragraph.component.css']
+
 })
 export class ToggleParagraphComponent {
 isVisible: boolean = true; // Variabile booleana per controllare la visibilità
