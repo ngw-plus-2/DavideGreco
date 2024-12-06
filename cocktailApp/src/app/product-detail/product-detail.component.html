@@ -1,0 +1,8 @@
+<h1>Dettaglio Cocktail</h1>
+<div *ngIf="cocktailDetails">
+  <h2>{{ cocktailDetails.strDrink }}</h2>
+  <img [src]="cocktailDetails.strDrinkThumb" alt="{{ cocktailDetails.strDrink }}" width="200">
+  <p><strong>Categoria:</strong> {{ cocktailDetails.strCategory }}</p>
+  <p><strong>Tipo di vetro:</strong> {{ cocktailDetails.strGlass }}</p>
+  <p><strong>Istruzioni:</strong> {{ cocktailDetails.strInstructions }}</p>
+</div>

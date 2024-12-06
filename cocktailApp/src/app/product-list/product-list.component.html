@@ -1,0 +1,6 @@
+<h1>Elenco dei Cocktail</h1>
+<ul>
+  <li *ngFor="let cocktail of cocktails">
+    <a [routerLink]="['/cocktails', cocktail.strDrink]">{{ cocktail.strDrink }}</a>
+  </li>
+</ul>
